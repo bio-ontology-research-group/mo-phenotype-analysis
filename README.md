@@ -96,4 +96,10 @@ we aquire this data from https://www.pombase.org/downloads/phenotype-annotations
 
 
 
+## Ontologies
+
+Pheno-e can be downloaded from [here](http://aber-owl.net/ontology/Pheno-e/#/)
+
+uPheno can be downloaded from [here](https://data.monarchinitiative.org/upheno2/current/upheno-release/all/upheno_all_with_relations.owl)
+
 
