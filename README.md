@@ -9,7 +9,7 @@ To generate the disease gene phenotypic similarity we use two main approaches (T
 
 Here we apply Resnik's semantic similarity using best maching approach of groupwise similarity
 
-To generate this similarity on classified ontology run the code Semantic similarity/fast_SimGDPairwise_Corpus.groovy
+To generate this similarity on classified ontology run the code [Semantic similarity/fast_SimGDPairwise_Corpus.groovy](https://github.com/bio-ontology-research-group/Module_organism_phenotypes/blob/main/Semantic%20similarity/fast_SimGDPairwise_Corpus.groovy)
 
 The input format of the phenotype annotations is a tab separated values, examples follows:
 
