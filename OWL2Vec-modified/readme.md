@@ -8,16 +8,13 @@ https://github.com/KRR-Oxford/OWL2Vec-Star
 The addition we provide here is to add walks that starts from additional entities(like genes, diseases, protiens, ...) that are annotatated by some ontology classes
 the additional annotaions will be in the following format (entity annotation_url) separated by space:
 
-> MGI:2673128 http://purl.obolibrary.org/obo/MP_0001262
->
-> MGI:2673128 http://purl.obolibrary.org/obo/MP_0001732
->
-> MGI:1913870 http://purl.obolibrary.org/obo/MP_0020069
->
-> MGI:1913870 http://purl.obolibrary.org/obo/MP_0003989
->
-> MGI:1913870 http://purl.obolibrary.org/obo/MP_0008948
-
+```sh
+MGI:2673128 http://purl.obolibrary.org/obo/MP_0001262
+MGI:2673128 http://purl.obolibrary.org/obo/MP_0001732
+MGI:1913870 http://purl.obolibrary.org/obo/MP_0020069
+MGI:1913870 http://purl.obolibrary.org/obo/MP_0003989
+MGI:1913870 http://purl.obolibrary.org/obo/MP_0008948
+```
 
 
 
