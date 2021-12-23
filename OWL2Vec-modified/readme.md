@@ -1,8 +1,6 @@
 This code is a modification to OWL2Vec* downloaded on 31 May 2021
 
-original link is here
-
-https://github.com/KRR-Oxford/OWL2Vec-Star
+original link is [here](https://github.com/KRR-Oxford/OWL2Vec-Star)
 
 
 The addition we provide here is to add walks that starts from additional entities(like genes, diseases, protiens, ...) that are annotatated by some ontology classes
