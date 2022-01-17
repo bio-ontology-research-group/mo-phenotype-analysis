@@ -1,5 +1,5 @@
-## Module_organism_phenotypes
-This repository contains all the scripts needed to test module organism phenotypes contribution in predicting gene disease associations using ontology-based phenotypic similarity
+
+This repository contains all the scripts needed to test model organism phenotypes contribution in predicting gene disease associations using ontology-based phenotypic similarity
 
 
 ## Usage
