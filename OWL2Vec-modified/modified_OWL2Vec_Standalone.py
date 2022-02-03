@@ -164,37 +164,6 @@ if 'URI_Doc' in config['DOCUMENT'] and config['DOCUMENT']['URI_Doc'] == 'yes':
         f.close()
     URI_Doc = walk_sentences + axiom_sentences
 
-annot_file=sys.argv[1]
-out_file=sys.argv[3]
-outf=open(out_file,'w+')
-go_classes={}
-with open(annot_file) as f:
-    for l in f:
-        p=l.rstrip().split()
-        include = False
-        if('/MP' in p[1]):
-            include = True
-        if(z and 'PHENO' in p[1]):
-            include = True
-        if(f and '/FB' in p[1]):
-            include = True
-        if(y and '/FYPO' in p[1]):
-            include = True
-        if include:
-            if p[1] not in go_classes:
-                go_classes[p[1]]=set([])
-            go_classes[p[1]].add(p[0])
-with open(sys.argv[2]) as f:
-    for l in tqdm(f):
-        parts=l.split()
-        if(len(parts)>0 and "http" in parts[0]):
-            if parts[0] in go_classes:
-                for prot in go_classes[parts[0]]:
-                    outf.write(prot+' '+l.rstrip()+'\n')
-
-
-
-
     if 'annotation_extra' in config['DOCUMENT']:
         classes_to_add = {}
         with open(config['DOCUMENT']['annotation_extra']) as f:
@@ -202,7 +171,7 @@ with open(sys.argv[2]) as f:
                 tmp = line.strip().split()
                 if tmp[1] not in classes_to_add:
                     classes_to_add[tmp[1]]=set([])
-                    classes_to_add[tmp[1]].add(tmp[0])
+                classes_to_add[tmp[1]].add(tmp[0])
         additional_lines = []
         for sentence in URI_Doc:
             parts=sentence.split()
