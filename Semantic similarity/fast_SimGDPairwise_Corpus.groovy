@@ -186,7 +186,7 @@ new File(args[1]).splitEachLine('\t') { items ->
            //id = URLEncoder.encode(id);
            for (int j=1; j < items.size(); j++){
              String pheno = items[j];
-             URI phenoURI = factory.getURI(class2equiv[pheno]))//;
+             URI phenoURI = factory.getURI(class2equiv[pheno])//;
              Edge e = new Edge(idURI, RDF.TYPE, phenoURI);
              //println e.toString()
              graph.addE(e);
