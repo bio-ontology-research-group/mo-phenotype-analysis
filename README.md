@@ -9,7 +9,7 @@ To generate the disease gene phenotypic similarity we use two main approaches (T
 
 Here we apply Resnik's semantic similarity using best maching approach of groupwise similarity
 
-To generate this similarity on classified ontology run the code [Semantic similarity/fast_SimGDPairwise_Corpus.groovy](https://github.com/bio-ontology-research-group/Module_organism_phenotypes/blob/main/Semantic%20similarity/fast_SimGDPairwise_Corpus.groovy)
+To generate this similarity on classified ontology run the code [Semantic similarity/fast_SimGDPairwise_Corpus.groovy](https://github.com/bio-ontology-research-group/mo-phenotype-analysis/blob/main/Semantic%20similarity/fast_SimGDPairwise_Corpus.groovy)
 
 The input format of the phenotype annotations is a tab separated values, examples follows:
 
@@ -53,7 +53,7 @@ OMIM:611773    http://purl.obolibrary.org/obo/HP_0030880    http://purl.obolibra
 OMIM:611777    http://purl.obolibrary.org/obo/HP_0011705    http://purl.obolibrary.org/obo/HP_0001279    http://purl.obolibrary.org/obo/HP_0011712    http://purl.obolibrary.org/obo/HP_0001645    http://purl.obolibrary.org/obo/HP_0000006    http://purl.obolibrary.org/obo/HP_0012248    http://purl.obolibrary.org/obo/HP_0001663
 ```
 
-After we calculate the semantic similarity we use [this script](https://github.com/bio-ontology-research-group/Module_organism_phenotypes/blob/main/src/Create_input_from_resnik_output.py) to generate the input of the gene-disease evaluation code
+After we calculate the semantic similarity we use [this script](https://github.com/bio-ontology-research-group/mo-phenotype-analysis/blob/main/src/Create_input_from_resnik_output.py) to generate the input of the gene-disease evaluation code
 
 
 **2- Ontology embedding similarity**
@@ -63,12 +63,12 @@ We provide a modification of OWL2Vec* which allows the annotaions to be represen
 
 after genrating the vector representations of the entities annotated by the ontology using any of these tools we calcutate cosine similarities using the scripts 
 
-[for vectors in json format](https://github.com/bio-ontology-research-group/Module_organism_phenotypes/blob/main/src/Create_input_from_OPA2Vec_Json_input_module_organims_test.py.py)
+[for vectors in json format](https://github.com/bio-ontology-research-group/mo-phenotype-analysis/blob/main/src/Create_input_from_OPA2Vec_Json_input_module_organims_test.py.py)
 
-[for vectors in word2vec gensim format](https://github.com/bio-ontology-research-group/Module_organism_phenotypes/blob/main/src/Create_input_from_gensim_vectors_module_organims_test.py.py)
+[for vectors in word2vec gensim format](https://github.com/bio-ontology-research-group/mo-phenotype-analysis/blob/main/src/Create_input_from_gensim_vectors_module_organims_test.py.py)
 
 
-we also tested with supervised learning from the vectors representation code is available in [Simple_NN](https://github.com/bio-ontology-research-group/Module_organism_phenotypes/tree/main/Simple_NN)
+we also tested with supervised learning from the vectors representation code is available in [Simple_NN](https://github.com/bio-ontology-research-group/mo-phenotype-analysis/tree/main/Simple_NN)
 
 
 
