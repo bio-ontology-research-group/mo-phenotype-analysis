@@ -279,7 +279,7 @@ smConfPairwise.setICconf(icConf);
 
 def result = new Double[genes.size() * diseases.size()]
 for (i = 0; i < result.size(); i++) {
-  result[i] = 0
+  result[i] = i
 }
 
 
