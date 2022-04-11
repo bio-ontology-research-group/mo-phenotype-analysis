@@ -264,9 +264,10 @@ diseases = getDiseases()
 //GraphActionExecutor.applyAction(factory, rooting, graph);
 ICconf icConf = new IC_Conf_Corpus("ResnikIC", SMConstants.FLAG_IC_ANNOT_RESNIK_1995_NORMALIZED);
 
-this.smConfPairwise = new SMconf("Jaccard", SMConstants.FLAG_SIM_PAIRWISE_DAG_NODE_JACCARD_IC  );
+//this.smConfPairwise = new SMconf("Jaccard", SMConstants.FLAG_SIM_PAIRWISE_DAG_NODE_JACCARD_IC  );
 //this.smConfPairwise = new SMconf("Resnik", SMConstants.FLAG_SIM_PAIRWISE_DAG_NODE_LIN_1998  );
-//new SMconf("Resnik", SMConstants.FLAG_SIM_PAIRWISE_DAG_NODE_RESNIK_1995 );
+this.smConfPairwise = new SMconf("Resnik", SMConstants.FLAG_SIM_PAIRWISE_DAG_NODE_RESNIK_1995 );
+
 if(grouping == "BMA"){
  this.smConfGroupwise = new SMconf("BMA", SMConstants.FLAG_SIM_GROUPWISE_BMA); 
 }
